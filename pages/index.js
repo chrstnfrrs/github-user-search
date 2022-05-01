@@ -12,7 +12,7 @@ import TwitterIcon from '../icons/twitter';
 import CompanyIcon from '../icons/company';
 import SearchIcon from '../icons/search';
 
-const URL = 'http://localhost:3000/api/search';
+const URL = '/api/search';
 
 const UserStats = ({ title, value }) => (
   <div className='flex flex-1 flex-col items-center md:items-start'>
