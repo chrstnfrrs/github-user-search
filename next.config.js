@@ -5,7 +5,6 @@ const nextConfig = {
     defaultLocale: 'en',
   },
   reactStrictMode: true,
-  target: 'serverless',
 };
 
 module.exports = nextConfig;
