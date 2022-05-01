@@ -4,7 +4,8 @@
 
 ## Description
 
-[Github User Search](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6)
+[Frontend Mentor Project - Github User Search](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6)
+
 [https://github-user-search.chrstnfrrs.com/](https://github-user-search.chrstnfrrs.com/)
 
 ## Getting Started
