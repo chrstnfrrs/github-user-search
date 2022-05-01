@@ -114,6 +114,7 @@ const GithubSearch = () => {
           <div className='flex w-full flex-1 flex-col  overflow-hidden'>
             <div className='flex items-center gap-5 md:gap-8 lg:flex-col lg:items-start'>
               <img
+                alt={`${user.name} profile image`}
                 src={user.avatarUrl}
                 className='block h-16 w-16 rounded-full md:h-28 md:w-28 lg:hidden'
               />
