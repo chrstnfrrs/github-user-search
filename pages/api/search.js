@@ -24,6 +24,7 @@ const USER_SEARCH_QUERY = `query ($username: String!) {
 }`;
 
 const handler = async (req, res) => {
+  console.log('searching...')
   const { data } = await $fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
