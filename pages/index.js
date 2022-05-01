@@ -105,22 +105,23 @@ const GithubSearch = () => {
           </button>
         </div>
         {/* User Card */}
-        <div className='flex gap-8 rounded-2xl bg-offWhite p-6 drop-shadow-lightInput dark:bg-offBlue dark:drop-shadow-none md:p-10 lg:p-12'>
+        <div className='flex flex-wrap gap-8 rounded-2xl bg-offWhite p-6 drop-shadow-lightInput dark:bg-offBlue dark:drop-shadow-none md:p-10 lg:p-12'>
           <img
+            alt={`${user.name} profile image`}
             src={user.avatarUrl}
             className='hidden h-28 w-28 rounded-full lg:block'
           />
-          <div className='flex flex-1 flex-col'>
+          <div className='flex w-full flex-1 flex-col  overflow-hidden'>
             <div className='flex items-center gap-5 md:gap-8 lg:flex-col lg:items-start'>
               <img
                 src={user.avatarUrl}
                 className='block h-16 w-16 rounded-full md:h-28 md:w-28 lg:hidden'
               />
-              <div className='flex w-full flex-col'>
-                <div className='flex flex-col items-start justify-between lg:flex-row lg:items-center'>
-                  <p className='text-lg font-bold text-offBlack dark:text-white md:text-2xl'>
+              <div className='flex w-full flex-col flex-wrap overflow-hidden'>
+                <div className='flex flex-col flex-wrap items-start justify-between overflow-hidden lg:flex-row lg:items-center'>
+                  <h2 className='text-lg font-bold text-offBlack dark:text-white md:text-2xl'>
                     {user.name}
-                  </p>
+                  </h2>
                   {Boolean(user.createdAt) && (
                     <p className='hidden text-base text-lightGrey dark:text-white lg:flex'>
                       Joined{' '}
@@ -153,7 +154,7 @@ const GithubSearch = () => {
               <UserStats title='Following' value={user.following.totalCount} />
             </div>
             <div className='flex flex-col gap-4 md:flex-row md:gap-8'>
-              <div className='flex flex-1 flex-col gap-4'>
+              <div className='flex flex-1 flex-col flex-wrap gap-4 overflow-hidden'>
                 <UserInfo Icon={<LocationIcon />}>{user.location}</UserInfo>
                 {user.websiteUrl ? (
                   <a
@@ -172,7 +173,7 @@ const GithubSearch = () => {
                   <UserInfo Icon={<LinkIcon />}>{user.websiteUrl}</UserInfo>
                 )}
               </div>
-              <div className='flex flex-1 flex-col gap-4'>
+              <div className='flex flex-1 flex-col flex-wrap gap-4 overflow-hidden'>
                 {user.twitterUsername ? (
                   <a
                     target='_blank'

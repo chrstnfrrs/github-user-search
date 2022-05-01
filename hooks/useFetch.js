@@ -6,18 +6,18 @@ const useFetch = (url, { params = {} }) => {
   const [data, setData] = React.useState(undefined);
   const [error, setError] = React.useState(false);
 
-  React.useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      const res = await $fetch(url, {
-        params,
-      });
-  
-      setError(res.error);
-      setData(res.data);
-      setLoading(false);
-    };
+  const fetchData = async () => {
+    setLoading(true);
+    const res = await $fetch(url, {
+      params,
+    });
 
+    setError(res.error);
+    setData(res.data);
+    setLoading(false);
+  };
+
+  React.useEffect(() => {
     fetchData();
   }, []);
 
