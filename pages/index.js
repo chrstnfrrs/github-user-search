@@ -55,7 +55,7 @@ const GithubSearch = () => {
   };
 
   return (
-    <div className='flex min-h-screen flex-1 items-center justify-center bg-lightBlue dark:bg-darkBlue'>
+    <div className='flex min-w-screen min-h-screen flex-1 items-center justify-center bg-lightBlue dark:bg-darkBlue'>
       <div className='mx-6 w-full flex-col md:mx-24 xl:max-w-[45rem]'>
         <div className='mb-8 flex justify-between'>
           <h1 className='text-3xl font-bold text-offBlack dark:text-white'>
